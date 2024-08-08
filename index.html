@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodJoy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container-fluid">
+        <div class="logo">
+            <a class="navbar-brand text-primary" href="#">
+                <i class="fas fa-utensils fs-2"></i>
+            </a>
+            <a class="navbar-brand fs-2 lead" href="#">FoodJoy</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-5" href="#">Our Story</a></li>
+                        <li><a class="dropdown-item fs-5" href="#">Discover Our Menu</a></li>
+                        <li><a class="dropdown-item fs-5" href="#">Events & Specials</a></li>
+                        <li><a class="dropdown-item fs-5" href="#">Book a Table</a></li>
+                        <li><a class="dropdown-item fs-5" href="#">Our Locations</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item fs-5" href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">About Us</a>
+                </li>
+            </ul>
+            <form class="d-flex gap-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+    </nav>
+
+    <div class="Social-media-icons">
+    <a href="https://facebook.com">
+        <i class="fa-brands fa-facebook d-block fs-1 text-primary"></i>
+    </a>
+    <a href="https://twitter.com">
+        <i class="fa-brands fa-twitter d-block  fs-1 my-3 text-primary"></i>
+    </a>
+    <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram d-block  fs-1 my-3 text-primary"></i>
+    </a>
+    <a href="https://telegram.com">
+        <i class="fa-brands fa-telegram d-block  fs-1 text-primary"></i>
+    </a>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fs-5" id="staticBackdropLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-primary">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pexels-reneterp-2544829.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption p-3">
+                    <h5 class="fs-1 ">Flavors at FoodJoy.</h5>
+                    <p class="lead fs-6">Indulge in a culinary journey.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-kampus-6605184.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption p-3">
+                    <h5 class="fs-1  ">Discover FoodJoy</h5>
+                    <p class="lead fs-6">Passion and flavor in every dish.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-cottonbro-4253303.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption p-3">
+                    <h5 class="fs-1 ">Welcome to FoodJoy</h5>
+                    <p class="lead fs-6">Delectable cuisine, inviting ambiance.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="jumbotron p-3 my-4 text-center">
+        <h1 class="display-2">Welcome to FoodJoy!</h1>
+        <p class="lead fs-4">Experience exceptional dining that combines delightful flavors with a cozy atmosphere. We're here to bring you the
+        finest dishes and the top-notch hospitality you deserve.</p>
+        <hr class="my-4">
+        <p>Discover our diverse menu and special offers designed to satisfy your cravings. Explore a range of delicious dishes
+            crafted with fresh ingredients in a cozy setting.</p>
+        <a class="btn btn-primary btn-lg d-block" href="#" role="button">Explore Menu</a> 
+    </div>
+
+    <div class="jumbotron jumbotron-fluid text-center my-5 py-5 bg-dark text-white">
+        <div class="container">
+            <h1 class="display-2">Savor Every Bite</h1>
+            <p class="lead fs-4">Enjoy exquisite dishes and impeccable service in a stylish setting. Discover flavors that will
+                delight your taste buds.</p>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Our Specialties
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <strong>Explore our signature dishes.</strong> From mouth-watering appetizers to delectable desserts,
+                    our specialties are crafted with the finest ingredients and utmost care to ensure a memorable dining
+                    experience.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Our Story
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <strong>Learn about our journey.</strong> Discover how FoodJoy was born from a passion for great food
+                    and exceptional service. Our story is one of dedication to quality and the joy of sharing delicious
+                    meals with our community.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Event Hosting
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>Host your next event with us.</strong> Whether it’s a birthday, anniversary, or corporate
+                    gathering, FoodJoy offers a warm atmosphere and customized catering options to make your event truly
+                    special.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="display-4">A Culinary Adventure</h1>
+            <p class="lead">Discover unique flavors and unforgettable dining experiences.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid my-4">
+    <div class="input-area">
+        <div class="title">
+            <p class="display-4">Customize Your Meal <small class="text-muted">Select your choices and let us
+                    know</small></p>
+        </div>
+        <div class="inp my-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Customize Your Order
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="orderModalLabel">Customize Your Meal</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Select your preferred dishes from our menu and let us know any specific requests you
+                                might have. We are here to accommodate your tastes and preferences.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <textarea class="form-control" id="orderDetails" rows="3"
+                placeholder="Detail your preferences, special instructions, or dietary restrictions here..."></textarea>
+        </div>
+    </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-dark text-white text-center">
+    <div class="container">
+        <h1 class="display-4">Personalized Culinary Experience</h1>
+        <p class="lead">Tailor your meal to suit your taste with our wide selection of dishes and customization options.
+        </p>
+    </div>
+    </div>
+
+    <div class="container-fluid my-4">
+    <div class="input-area">
+        <div class="title">
+            <p class="display-4">Customize Your Meal <small class="text-muted">Select your choices and let us
+                    know</small></p>
+        </div>
+        <div class="inp my-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Customize Your Order
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="orderModalLabel">Customize Your Meal</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Select your preferred dishes from our menu and let us know any specific requests you
+                                might have. We are here to accommodate your tastes and preferences.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <textarea class="form-control" id="orderDetails" rows="3"
+                placeholder="Detail your preferences, special instructions, or dietary restrictions here..."></textarea>
+        </div>
+    </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mt-5 bg-dark text-white text-center">
+    <div class="container">
+        <h1 class="display-4">Freshly Prepared Just for You</h1>
+        <p class="lead">Experience the joy of dining with dishes prepared fresh according to your exact preferences.</p>
+    </div>
+    </div>
+
+    <div class="container-fluid my-4">
+    <div class="input-area">
+        <div class="title">
+            <p class="display-4">Customize Your Meal <small class="text-muted">Select your choices and let us
+                    know</small></p>
+        </div>
+        <div class="inp my-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                Customize Your Order
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="orderModalLabel">Customize Your Meal</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Select your preferred dishes from our menu and let us know any specific requests you
+                                might have. We are here to accommodate your tastes and preferences.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <textarea class="form-control" id="orderDetails" rows="3"
+                placeholder="Detail your preferences, special instructions, or dietary restrictions here..."></textarea>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+            <div class="container-fluid scroll-img col-12">
+            
+            </div>
+    </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid p-3 mb-4 text-center bg-dark text-white">
+        <div class="container">
+            <h1 class="display-4">Explore Our Menu</h1>
+            <p class="lead">Dive into our selection of mouth-watering dishes. Each card reveals a unique flavor experience
+                with details and images to tempt your taste buds.</p>
+        </div>
+    </div>
+
+    <div class="cards container-fluid my-4">
+    <div class="row text-center">
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card food">
+                <img src="images/pexels-deeanacreates-2894651.jpg" class="card-img-top" alt="Delicious Pasta">
+                <div class="card-body">
+                    <h5 class="card-title">Delicious Pasta</h5>
+                    <p class="card-text">Savor our rich and creamy pasta, cooked to perfection with fresh ingredients.
+                    </p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-pascal-claivaz-66964-410648.jpg" class="card-img-top" alt="Succulent Steak">
+                <div class="card-body">
+                    <h5 class="card-title">Succulent Steak</h5>
+                    <p class="card-text">Enjoy our juicy steak, grilled to your liking and served with seasonal
+                        vegetables.</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-fotios-photos-1279330.jpg" class="card-img-top" alt="Fresh Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Spaghetti Bolognese</h5>
+                    <p class="card-text">A classic Italian dish featuring rich, savory meat sauce over perfectly cooked spaghetti.</p></p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="cards container-fluid my-4">
+    <div class="row text-center">
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-xmtnguyen-699953.jpg" class="card-img-top" alt="Delicious Pasta">
+                <div class="card-body">
+                    <h5 class="card-title">Delicious Pasta</h5>
+                    <p class="card-text">Savor our rich and creamy pasta, cooked to perfection with fresh ingredients.
+                    </p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-sydney-troxell-223521-718742.jpg" class="card-img-top" alt="Succulent Steak">
+                <div class="card-body">
+                    <h5 class="card-title">Succulent Steak</h5>
+                    <p class="card-text">Enjoy our juicy steak, grilled to your liking and served with seasonal
+                        vegetables.</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-fotios-photos-1279330.jpg" class="card-img-top" alt="Fresh Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Spaghetti Bolognese</h5>
+                    <p class="card-text">A classic Italian dish featuring rich, savory meat sauce over perfectly cooked spaghetti.</p></p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="cards container-fluid my-4">
+    <div class="row text-center">
+        <div class="col-xl-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-dana-tentis-118658-262959.jpg" class="card-img-top" alt="Delicious Pasta">
+                <div class="card-body">
+                    <h5 class="card-title">Delicious Pasta</h5>
+                    <p class="card-text">Savor our rich and creamy pasta, cooked to perfection with fresh ingredients.
+                    </p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6  col-12 my-2">
+            <div class="card  food">
+                <img src="images/pexels-deeanacreates-2894651.jpg" class="card-img-top" alt="Succulent Steak">
+                <div class="card-body">
+                    <h5 class="card-title">Succulent Steak</h5>
+                    <p class="card-text">Enjoy our juicy steak, grilled to your liking and served with seasonal
+                        vegetables.</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="container-fluid scroll-imgTwo col-12">
+
+        </div>
+    </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-white p-3 text-center">
+    <div class="container">
+        <h1 class="display-4">Meet Our Chefs</h1>
+        <p class="lead">Get to know the talented chefs behind our delicious dishes.</p>
+    </div>
+    </div>
+
+    <div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-xl-4 col-12 mb-3">
+            <div class="card text-bg-dark chef">
+                <img src="images/pexels-rdne-5779923.jpg" class="card-img" alt="Chef John">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Chef John Smith</h5>
+                    <p class="card-text">Innovative in traditional cuisine.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+            <div class="card text-bg-dark chef">
+                <img src="images/pexels-tirachard-kumtanom-112571-887827.jpg" class="card-img" alt="Chef Emily Johnson">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Chef Michael Lee</h5>
+                    <p class="card-text">Expert in modern fusion cuisine.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-12 mb-3">
+            <div class="card text-bg-dark chef">
+                <img src="images/pexels-anntarazevich-6937431.jpg" class="card-img" alt="Chef Michael Lee">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">
+                        Chef Emily Johnson
+                    </h5>
+                    <p class="card-text">Pastry arts specialist.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+<div class="row">
+<div class="col-12 w-100">
+    <div class="card mb-3 col-12 recipe" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-3 overflow-hidden">
+                <img src="images/pexels-vadimmarkin-2383305.jpg" class="img-fluid rounded-start" alt="Delicious Dish">
+            </div>
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title fs-1">Creamy Tomato Soup</h5>
+                    <p class="card-text fs-5">Experience the delightful taste of our creamy tomato soup, crafted from the
+                        finest ripe tomatoes, aromatic onions, and fresh garlic, all blended with fragrant basil. This
+                        soup is cooked slowly to develop its rich flavors and then pureed to achieve a smooth, velvety
+                        texture. The addition of cream elevates the dish to a comforting and satisfying level, making it
+                        ideal for any time of the year.</p>
+                    <p class="card-text fs-5">Pair this soup with a slice of warm, crusty bread or a sprinkle of Parmesan
+                        cheese to enhance its flavor. It's not only an easy recipe to prepare but also a perfect choice
+                        for a quick, delicious weeknight meal or a light starter for a special gathering.</p>
+                    <div class="card-text">
+                        <div class="video d-flex gap-2 p-2">
+                            <a href="#" target="_blank"
+                                class="d-flex align-items-center text-decoration-none">
+                                <span class="lead fw-bold me-2">Watch Recipe Video</span>
+                                <i class="fs-3 fa-solid fa-play text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 w-100">
+    <div class="card mb-3 col-12 recipe" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title fs-1">Classic Caesar Salad</h5>
+                    <p class="card-text fs-5">This Classic Caesar Salad is a timeless favorite, featuring crisp romaine
+                        lettuce paired with crunchy homemade croutons and a tangy Caesar dressing. The dressing is a
+                        rich blend of Parmesan cheese, fresh garlic, and anchovies, creating a savory and flavorful
+                        experience. A touch of lemon juice adds a zesty kick, enhancing the overall taste.</p>
+                    <p class="card-text fs-5">Perfect for a light and refreshing lunch or as a side dish, this salad is
+                        versatile and satisfying. For a heartier option, consider adding grilled chicken or shrimp,
+                        which complements the salad’s crisp textures and tangy flavors.</p>
+                        <div class="video d-flex gap-2 p-2">
+                            <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                <span class="lead fw-bold me-2">Watch Recipe Video</span>
+                                <i class="fs-3 fa-solid fa-play text-primary"></i>
+                            </a>
+                        </div>
+                    <p class="card-text"><small class="text-muted">Last updated 15 mins ago</small></p>
+                </div>
+            </div>
+            <div class="col-md-3 overflow-hidden">
+                <img src="images/pexels-visit-romo-tonder-166051924-10899578.jpg" class="img-fluid rounded-start" alt="Delicious Dish">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 w-100">
+    <div class="card mb-3 col-12 recipe" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-3 overflow-hidden">
+                <img src="images/pexels-cottonbro-3338675.jpg" class="img-fluid rounded-start" alt="Delicious Dish">
+            </div>
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title fs-1">Gourmet Beef Burger</h5>
+                    <p class="card-text fs-5">Indulge in our Gourmet Beef Burger, crafted from premium ground beef, seasoned
+                        with a blend of spices, and cooked to your preferred doneness. This burger features a slice of
+                        melted cheddar cheese, sweet caramelized onions, and a rich smoky BBQ sauce, all sandwiched
+                        between a toasted brioche bun for an extra layer of flavor and texture.</p>
+                    <p class="card-text fs-5">Perfectly paired with crispy fries or a fresh, crisp salad, this burger offers
+                        a fulfilling and delicious meal experience. Each bite combines savory and sweet notes, making it
+                        a great choice for a substantial lunch or dinner. Feel free to personalize with your favorite
+                        toppings for a truly customized gourmet experience.</p>
+                        <div class="video d-flex gap-2 p-2">
+                            <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                <span class="lead fw-bold me-2">Watch Recipe Video</span>
+                                <i class="fs-3 fa-solid fa-play text-primary"></i>
+                            </a>
+                        </div>
+                    <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 w-100">
+    <div class="card mb-3 col-12 recipe" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title fs-1">Gourmet Beef Burger</h5>
+                    <p class="card-text fs-5">Indulge in our Gourmet Beef Burger, made from premium ground beef, seasoned to
+                        perfection, and cooked to your preferred level of doneness. It’s topped with melted cheddar
+                        cheese, caramelized onions, and a smoky BBQ sauce, all nestled in a toasted brioche bun for a
+                        gourmet touch.</p>
+                    <p class="card-text fs-5">Pair it with crispy fries or a fresh salad for a satisfying meal. The
+                        combination of savory flavors and textures makes each bite delightful. Feel free to add your
+                        favorite toppings to customize this classic burger with a gourmet twist.</p>
+                        <div class="video d-flex gap-2 p-2">
+                            <a href="#" target="_blank" class="d-flex align-items-center text-decoration-none">
+                                <span class="lead fw-bold me-2">Watch Recipe Video</span>
+                                <i class="fs-3 fa-solid fa-play text-primary"></i>
+                            </a>
+                        </div>
+                    <p class="card-text"><small class="text-muted">Last updated 20 mins ago</small></p>
+                </div>
+            </div>
+            <div class="col-md-3 overflow-hidden">
+                <img src="images/pexels-cottonbro-3338539.jpg" class="img-fluid rounded-start" alt="Delicious Dish">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="card border-light mb-3 bg-dark" style="max-width: 18rem;">
+                    <div class="card-header bg-dark border-light text-white">Join Us</div>
+                    <div class="card-body text-center text-white">
+                        <h5 class="card-title">Follow Us on Facebook</h5>
+                        <p class="card-text">Get the latest updates and special offers. Join our Facebook community!</p>
+                        <a href="https://facebook.com" class="text-white">
+                            <i class="fab fa-facebook-f fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="card-footer bg-dark border-light text-center text-white">
+                        <small>Stay connected!</small>
+                    </div>
+                </div>
+            </div>
+
+
+
+<div class="col-lg-4 col-12">
+    <div class="card border-white bg-dark mb-3 text-white" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-white">Special Deals</div>
+        <div class="card-body text-center text-white">
+            <h5 class="card-title">Exclusive Offers on Instagram</h5>
+            <p class="card-text">Check Instagram for deals and promotions. Follow us for updates!</p>
+            <a href="https://instagram.com" class="text-white">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+        </div>
+        <div class="card-footer bg-transparent border-white text-center">
+            <small>Don’t miss out!</small>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-lg-4 col-12">
+    <div class="card bg-dark text-white mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-white">Recipes & More</div>
+        <div class="card-body text-center text-white">
+            <h5 class="card-title">Discover on Twitter</h5>
+            <p class="card-text">Explore new recipes and updates. Follow us on Twitter!</p>
+            <a href="https://twitter.com" class="text-white">
+                <i class="fab fa-twitter fa-3x"></i>
+            </a>
+        </div>
+        <div class="card-footer bg-transparent border-white text-center">
+            <small>Join the conversation!</small>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+<footer class="bg-dark p-3 text-center">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fas fa-phone-alt"></i> Contact Us</h5>
+                <p >Opening Hours: 10 AM - 10 PM</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> contact@restaurant.com</p>
+            </div>
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fas fa-info-circle"></i> About Us</h5>
+                <p>We offer the finest local and international dishes in a warm and cozy atmosphere. Each dish is
+                    prepared using the freshest ingredients.</p>
+            </div>
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fas fa-map-marker-alt"></i> Our Locations</h5>
+                <p><i class="fas fa-map-pin"></i> Downtown Branch: Nile Street, No. 123</p>
+                <p><i class="fas fa-map-pin"></i> Airport Branch: Airport Road, No. 456</p>
+                <p><i class="fas fa-map-pin"></i> Beach Branch: Beach Street, No. 789</p>
+            </div>
+        </div>
+        <div class="row text-white">
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fas fa-info"></i> Additional Information</h5>
+                <p>Book your table in advance to ensure your spot during peak hours.</p>
+                <p>Visit our website for the latest offers and discounts.</p>
+            </div>
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fab fa-facebook-f"></i> Follow Us on Social Media</h5>
+                <p>Follow us on Facebook, Instagram, and Twitter for the latest updates and offers.</p>
+            </div>
+            <div class="col-xl-4 col-12 border-top border-bottom py-3">
+                <h5><i class="fas fa-star"></i> Customer Reviews</h5>
+                <p>We value our customers' feedback. Feel free to leave a comment or review to help us improve our
+                    services.</p>
+            </div>
+        </div>
+        <div class="row text-white text-center">
+            <div class="col-12 py-3">
+                <p>&copy; 2024 Our Restaurant. All rights reserved. Design by [Designer’s Name].</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
