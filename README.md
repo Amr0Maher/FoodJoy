@@ -37,6 +37,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Bootstrap: For its incredible framework that made responsive design effortless.
 GitHub: For hosting and sharing this project.
 Thank you for visiting FoodJoy! We hope you enjoy exploring the website and finding inspiration for your own projects. Feel free to reach out with any questions or feedback!
-
-
-هذا النص يبرز مميزات المشروع ويقدم تعليمات واضحة حول كيفية البدء مع تفاصيل إضافية تجعل القارئ يشعر بالترحيب ويشجعهم على تجربة المشروع. إذا كان لديك أي طلبات إضافية أو تعديلات، لا تتردد في إخباري!
