@@ -4,7 +4,7 @@
 
 Welcome to **FoodJoy**! This website is crafted using the powerful **Bootstrap** framework to deliver a seamless and visually appealing user experience. **FoodJoy** utilizes Bootstrap’s Grid System to organize content into a responsive and attractive layout, ensuring that the website looks great and functions well on any device.
 
-![Screenshot of FoodJoy Website](https://github.com/Amrr-Maherr/FoodJoy/blob/master/FoodJoy%20and%206%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%208_15_2024%208_54_56%20PM.png?raw=true)
+![Screenshot of FoodJoy Website](https://github.com/Amrr-Maherr/FoodJoy/blob/master/readme-images/TourEg%20and%204%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%208_18_2024%207_04_40%20PM.png?raw=true)
 
 ## 🛠 Features
 
