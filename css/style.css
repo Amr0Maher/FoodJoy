@@ -10,7 +10,9 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.193);
 }
-
+.carousel-item img {
+    height: 90dvh;
+}
 /* Scroll images styling */
 .scroll-img,
 .scroll-imgTwo {
